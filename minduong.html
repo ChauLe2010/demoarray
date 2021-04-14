@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [-2,-3,4,9,7,-5,5];
+    //Tim phan tu nho nhat
+    if(a.length==0){
+        alert("Mang rong");
+    }else{
+        let min=a[0];
+        for(i=1;i<a.length;i++){
+            if(a[i]<min){
+                min=a[i];
+            }
+        }
+        alert("Gia tri nho nhat la: "+min);
+    }
+    //Tim phan tu duong nho nhat
+    if(a.length==0){
+        alert("Mang rong");
+    }else{
+        //Tim phan tu duong dau tien
+        let i;
+        let minduong;
+        for(i=0;i<a.length;i++){
+            if(a[i]>0){
+                minduong=a[i];
+                break;
+            }
+        }
+        //So sanh voi cac phan tu duong tiep theo de tim gia tri duong nho nhat
+        for(;i<a.length;i++){
+            if(a[i]>0&&a[i]<minduong){
+                minduong=a[i];
+            }
+        }
+
+        alert("Gia tri duong nho nhat la: "+minduong);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [-2,-3,4,9,7,-5,5];
+    let index=+prompt("Nhap vi tri can chen: ");
+    if(index>=a.length||index<0)
+        alert("Vi tri khong hop le");
+    else{
+        for(i=index;i<a.length;i++){
+            a[i]=a[i+1];
+        }
+        console.log(a);
+    }
+</script>
+</body>
+</html>
